@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="submissionDone hidden">Details Added Successfully</div>
+    <div class="deleteDone hidden"> Details Removed Successfully</div>
+    <header>
+        <h1 id="heading" style="text-align: center;"> Resume Maker .</h1>
+    </header>
+    <main>
+        <div class="alertMsg"></div>
+        <div class="mainPage">
+            <div class="resumeInputPage">
+                <span class="topicHeading"> Personal Details</span>
+                <div class="personal-details">
+                    <div class="designation inputManager">
+                        <label for="designationInput" class="spanHeading"> Enter Your Designation </label>
+                        <input type="text" id="designationInput" required>
+                        <div id="desResult"></div>
+                    </div>
+                    <div class="name inputManager">
+                        <label for="nameInput"> Name </label>
+                        <input type="text" id="nameInput" required>
+                    </div>
+                    <div class="email inputManager">
+                        <label for="emailInput"> Email </label>
+                        <input type="email" id="emailInput">
+                    </div>
+                    <div class="phoneNumber inputManager">
+                        <label for="phoneNumberInput"> Mobile Number </label>
+                        <input type="tel" id="phoneNumberInput">
+                    </div>
+                    <br>
+                    <div class="submit-personal">
+                        <button id="submit-personal"> Submit </button>
+                    </div>
+
+                </div>
+                <div class="professional-summary">
+                    <span id="summaryHeadig" class="topicHeading">Professional Summary</span>
+                    <p class="additionalInfo ">Write 2-4 short & energetic sentences to interest the reader! Mention
+                        your role, experience &
+                        most importantly - your biggest achievements, best qualities and skills.</p>
+
+                    <textarea name="he" id="summaryInput" placeholder="textarea test"> </textarea>
+                    
+                </div>
+                <div class="companyList">
+                    <span class="topicHeading"> Employement History</span>
+                    <p class="additionalInfo">Show your relevant experience (last 10 years). Use bullet point to note
+                        your achievement. if
+                        possible - use no./facts (Achived X, measured by Y. by doing Z)</p>
+                    <span class="addNewSection"> + Add Employement here</span>
+                    
+
+                </div>
+                <div class="educationList">
+                    <span class="topicHeading"> Qualifications</span>
+                    <p class="additionalInfo">A varied education on your resume sums up the value that you are learning
+                        and background will
+                        bring to job</p>
+                    <span class="newEducation addNewSection"> + Add New Education</span>
+
+                </div>
+                <div class="socialLinks">
+                    <span class="topicHeading"> Social Links</span>
+                    <p class="additionalInfo"> Add your social links here</p>
+                    <span class="addSocialLink addNewSection"> + Add </span>
+
+                </div>
+                <div class="projects">
+                    <span class="topicHeading"> Projects Links</span>
+                    <p class="additionalInfo"> Add your projects with detailed usecases here</p>
+                    <span class="addProject addNewSection"> + Add </span>
+
+                </div>
+
+            </div>
+            <div class="secondDiv">
+                <div class="customised">
+                    <div>
+                        <span> Font Color</span>
+                        <input type="color" id="fontColorSet">
+                    </div>
+                    <div class="downloadDiv">
+                        <div class="maintain">
+                            <span> Download PDF here</span>
+                            <button id="downloadPdf"> download</button>
+                        </div>
+                        <div class="maintain">
+                            <span> Preview Demo Pdf here. </span>
+                            <button id="previewPdf"><a id="preview" href="resumepdf.html">Preview </a></button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="resumePdfPage">
+                    <div class="personal-details-pdf givingMargin">
+                        <div class="namePdf">
+                            <h2 id="pdfName">  </h2>
+                            <span id="pdfDesignation"> </span>
+                        </div>
+                        <div class="contactPdf">
+                            <span id="pdfPhoneNumber"> </span>
+                            <span id="pdfEmail"> </span>
+                        </div>
+                       
+                    </div>
+                    <hr>
+                    <div class="summarypdf givingMargin">
+                        
+                    </div>
+                    <hr>
+                    <div class="employeementPdf givingMargin">   
+                        
+                    </div>
+                    <hr>
+                    <div class="eduactionPdf givingMargin">
+                        
+                    </div>
+                    <hr>
+                    <div class="socialPdf givingMargin">
+
+                    </div>
+                    <hr>
+                    <div class="projectsPdf givingMargin">
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </main>
+
+</body>
+
+</html>
