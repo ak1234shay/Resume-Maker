@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+.hidden{
+    display: none;
+}
+
+
+.mainPage{
+    display: flex;
+    justify-content: space-evenly;        
+}
+.submissionDone{
+    color: green;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20%;
+    height: 0;
+    left: 30vw;
+    right: 20vw;
+    width: fit-content;
+    z-index: 2;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.deleteDone{
+    color: red;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20%;
+    height: 0;
+    left: 30vw;
+    right: 20vw;
+    width: fit-content;
+    z-index: 2;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.companyList{
+    position: relative;
+}
+.educationList{
+    position: relative;
+
+}
+
+.spanHeading{
+    font-size: 0.75rem;
+}
+/* Personal Details */
+
+/* Input of Personal Details */
+
+.resumeInputPage{
+    border: 2px solid  black;
+    width: 48%;
+    padding-inline: 12px;
+
+}
+
+.personal-details{
+    margin-top: 12px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.inputManager{
+    min-width: 230px;
+    width: 48%;
+    flex-grow: 1;
+    display:  inline-flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.inputManager label{
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    margin-left: 2px;
+    font-size: 0.8rem;
+}
+.inputManager span{
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    margin-left: 2px;
+    font-size: 0.8rem;
+}
+
+.inputManager input{
+    height: 32px;
+    border-radius: 10px;
+    background-color: rgba(216, 213, 208, 0.58);
+    border: 1px solid rgba(216, 213, 208, 0.795);
+}
+
+.submit-personal{
+    margin-inline: 40%;
+    
+}
+#submit-personal{
+    font-size: 1rem;
+    padding: 2px 8px;
+    margin-bottom: 32px;
+    border-radius: 10px;
+    border: 0.1px solid gray;
+
+}
+
+.submit{
+    font-weight: 500;
+    padding: 2px 8px;
+    margin-inline: 40%;
+    border-radius: 10px;
+    border: 0.1px solid gray;
+}
+.submit:active{
+    color: blueviolet;
+}
+.submit:hover{
+    cursor: pointer;
+}
+.professional-summary{
+    /* width: 95%; */
+    margin-inline: auto;
+}
+.professional-summary p{
+    font-size: 0.8rem;
+    color: gray;
+    margin-block: 8px;
+}
+.employement-history{
+    /* width: 95%; */
+    margin-inline: auto;
+}
+
+.employement-history p{
+    font-size: 0.8rem;
+    color: gray;
+    margin-block: 8px;
+}
+
+
+.professional-summary textarea{
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    background-color: rgba(216, 213, 208, 0.58);
+    border: 1px solid rgba(216, 213, 208, 0.795);
+    max-width: 100%;
+}
+textarea{
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    background-color: rgba(216, 213, 208, 0.58);
+    border: 1px solid rgba(216, 213, 208, 0.795);
+    max-width: 100%;
+}
+.projectDesc{
+    width: 100%;
+}
+
+
+
+
+.start-end-date{
+    display: flex;
+    width: 50%;
+    min-width: 230px;
+    gap: 6px;
+}
+.start-end-date input{
+    width: 50%;
+}
+.employeeBox{
+    width: 100%;
+    padding: 4px 6px;
+    box-shadow: 0 0 2px 1px black;
+    position: relative;
+    margin-bottom: 8px;
+}
+.jobDescription{
+    height: 80px;
+}
+.cross{
+    position: absolute;
+    right: 8px;
+    top: 2px;
+    padding-inline:  6px;
+    border: 0.3px solid rgb(122, 122, 122);
+    color: red;
+    font-size: 1.25rem;
+    border-radius: 2px;
+}
+
+/* utility classes */
+.topicHeading{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.addNewSection{
+    color: rgb(224, 102, 15);
+    font-weight: 500;
+}
+.addNewSection:hover{
+    cursor: pointer;
+}
+.secondDiv{
+    width: 48%;
+}
+.customised{
+    width: 100%;
+    /* height: 100px; */
+    border: 2px solid black;
+    padding: 10px 8px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+
+}
+.downloadDiv{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;    
+}
+.maintain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 700;
+    gap: 12px;
+}
+.maintain span{
+    font-size: 0.8rem;
+}
+#preview{
+    text-decoration: none;
+    color: inherit;
+}
+.maintain button{
+    padding: 6px 2px;
+    border-radius:6px ;
+    border: 1px solid rgb(17, 17, 17);
+    font-weight: 700;
+    /* color: white; */
+    background-color: rgb(171, 89, 248);
+}
+.maintain button:hover{
+    cursor: pointer;
+}
+.maintain button:active{
+    color: blueviolet;
+}
+/* #downloadPdf{
+    padding: 4px;
+    font-weight: 600px;
+    border-radius: 4px;
+    display: block;
+    border: 0.5px solid gray;
+    margin-inline: auto;
+} */
+
+/* PDF of personal Details */
+.resumePdfPage{
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid gray;
+}
+.personal-details-pdf{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    margin-inline: auto;
+    margin-bottom: 12px;
+}
+.contactPdf{
+    display: flex;
+    justify-content: space-between;
+}
+.summarypdf{
+    font-size: 0.9rem;
+    text-align:justify;
+    margin-block: 12px;
+    position: relative;
+}
+.givingMargin{
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+.employeementPdf{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+}
+.employeeManage{
+    display: flex;
+    justify-content: space-between;
+}
+.additionalInfo{
+    font-size: 0.8rem;
+    color: gray;
+    text-align: justify;
+}
+
+.socialPdf a{
+    
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+}
+.projectTitle {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media (max-width: 840px) {
+    .mainPage{
+        flex-direction: column;
+        gap:12px
+    }
+    .resumeInputPage{
+        width: 90%;
+        margin-inline: auto;
+    }
+    .secondDiv{
+        width: 90%;
+        margin-inline: auto;
+    }
+}
